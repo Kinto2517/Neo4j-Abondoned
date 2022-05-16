@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <div class="h-full">
+        <div class=" ">
+            <header class="px-3 py-3 " style="background-color: #525252">
+                <h2 class="font-semibold text-gray-800" style="color: #efc763; font-size: 30px">DOSYALAR</h2>
+            </header>
+            <div class="p-3">
+                <div class="overflow-x-auto">
+                    <table style="width: 700px">
+                        <thead class="">
+                        <tr>
+                            <th class="">
+                                <div class="">#</div>
+                            </th>
+                            <th >
+                                <div class="font-semibold ">Dosya Adi</div>
+                            </th>
+                            <th class="p-2 whitespace-nowrap">
+                                <div class="font-semibold text-center">Kullanici Adi</div>
+                            </th>
+                            
+                            <th class="p-2 whitespace-nowrap">
+                                <div class="font-semibold text-center">Indir</div>
+                            </th>
+                        </tr>
+                        </thead>
+                            {% for row in alldata %}
+                                {% if row.user_username == current_user.username %}
+                        <tbody class="text-sm divide-y divide-gray-100 ">
+                                <tr class="content-section">
+                                <td class="p-2 whitespace-nowrap">{{ row.id }}</td>
+                                <td class="p-2 whitespace-nowrap">{{ row.name }}</td>
+                                    <td class="p-2 whitespace-nowrap">{{ row.user_username }}</td>
+                                <td><a target="_blank" href="dosyaindirme/{{ row.name }}"><img style="width: 30px; height: 30px" src="https://cdn-icons.flaticon.com/png/512/814/premium/814848.png?token=exp=1640050385~hmac=37dfd1c83c93dcd2cc4fa00c457f8382"></a></td>
+                            </tr>
+                        </tbody>
+                        {% endif %}
+                        {% endfor %}
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock content %}

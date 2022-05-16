@@ -1,0 +1,90 @@
+{% extends "homeadminlayout.html" %}
+{% block content %}
+
+    <div class="h-full" style="width: 940px">
+        <div class="" style="margin-left: -300px;width: 1000px">
+            <header class="px-3 py-3 " style="background-color: #525252; width:1500px;">
+                <h2 class="font-semibold text-gray-800" style="color: #17a6ab; font-size: 32px">Sorgu Odasi</h2>
+            </header>
+            <div class="p-3" style="width: 940px">
+                <div class="overflow-x-auto" style="width: 940px">
+                    <table style="width: 700px">
+                        <thead class="">
+                        <tr>
+                            <th class="">
+                                <div class="">#</div>
+                            </th>
+                            <th>
+                                <div class="font-semibold ">Ad</div>
+                            </th>
+                            <th class="p-2 whitespace-nowrap">
+                                <div class="font-semibold text-center">Soyad</div>
+                            </th>
+                            <th class="p-2 whitespace-nowrap">
+                                <div class="font-semibold text-center">Ogrenci No</div>
+                            </th>
+                            <th class="p-2 whitespace-nowrap">
+                                <div class="font-semibold text-center">Ogrenci Turu</div>
+                            </th>
+                            <th class="p-2 whitespace-nowrap">
+                                <div class="font-semibold text-center">Ders</div>
+                            </th>
+
+                            <th class="p-2 whitespace-nowrap">
+                                <div class="font-semibold text-center">Donem</div>
+                            </th>
+
+                            <th class="p-2 whitespace-nowrap">
+                                <div class="font-semibold text-center">Baslik</div>
+                            </th>
+                            <th class="p-2 whitespace-nowrap">
+                                <div class="font-semibold text-center">Anahtar Kelime</div>
+                            </th>
+
+                            <th class="p-2 whitespace-nowrap">
+                                <div class="font-semibold text-center">Danisman</div>
+                            </th>
+
+                            <th class="p-2 whitespace-nowrap">
+                                <div class="font-semibold text-center">Juri</div>
+                            </th>
+                            <th class="p-2 whitespace-nowrap">
+                                <div class="font-semibold text-center">Pdf ID</div>
+                            </th>
+                        </tr>
+                        </thead>
+
+
+                        {% for row in alldata %}
+                            <tbody class="text-sm divide-y divide-gray-100 ">
+                            {% if current_user.is_admin() %}
+
+                                <tr class="content-section">
+
+                                    <td class="p-2 whitespace-nowrap">{{ row.id }}</td>
+                                    <td class="p-2 whitespace-nowrap">{{ row.ad }}</td>
+                                    <td class="p-2 whitespace-nowrap">{{ row.soyad }}</td>
+                                    <td class="p-2 whitespace-nowrap">{{ row.ogrNo }}</td>
+                                    <td class="p-2 whitespace-nowrap">{{ row.ogrTur }}</td>
+                                    <td class="p-2 whitespace-nowrap">{{ row.dersAdi }}</td>
+                                    <td class="p-2 whitespace-nowrap">{{ row.donem }}</td>
+                                    <td class="p-2 whitespace-nowrap">{{ row.baslik }}</td>
+                                    <td class="p-2 whitespace-nowrap">{{ row.keyword }}</td>
+                                    <td class="p-2 whitespace-nowrap">{{ row.danisman }}</td>
+                                    <td class="p-2 whitespace-nowrap">{{ row.juri }}</td>
+
+                                    <td class="p-2 whitespace-nowrap">{{ row.pdf_id }}</td>
+
+
+                                </tr>
+                            {% endif %}
+                            </tbody>
+                        {% endfor %}
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock content %}

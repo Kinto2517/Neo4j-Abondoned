@@ -1,0 +1,41 @@
+{% extends "aapls.html" %}
+
+{% block content %}
+    <table id="example" class="display responsive nowrap table-stripped " style="width: 500px; margin-left: -100px">
+        <thead>
+        <tr>
+            <th>Isim</th>
+            <th>Soyisim</th>
+            <th>Ogr No</th>
+            <th>Ogr Turu</th>
+            <th>Ders Adi</th>
+            <th>Donem</th>
+            <th>Baslik</th>
+            <th>Danisman</th>
+            <th>Juri</th>
+            <th>Kullanici</th>
+            <th>Anahtar Kelime</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        {% for sorgu in sorgular %}
+            <tr>
+                <td>{{ sorgu.ad }}</td>
+                <td>{{ sorgu.soyad }}</td>
+                <td>{{ sorgu.ogrNo }}</td>
+                <td>{{ sorgu.ogrTur }}</td>
+                <td>{{ sorgu.dersAdi }}</td>
+                <td>{{ sorgu.donem }}</td>
+                <td>{{ sorgu.baslik }}</td>
+                <td>{{ sorgu.danisman }}</td>
+                <td>{{ sorgu.juri }}</td>
+                <td>{{ pdfdata }}</td>
+                <td>{{ sorgu.keyword }}</td>
+
+
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

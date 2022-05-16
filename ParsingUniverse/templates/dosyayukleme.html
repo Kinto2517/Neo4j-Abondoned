@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    {% with mesajlar = get_flashed_messages() %}
+        {% if mesajlar %}
+            <ul class=flashes>
+                {% for mesaj in mesajlar %}
+                    <li>{{ mesaj }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+
+    <form action="/dosyayukle" method="post" enctype=multipart/form-data>
+        <div class="wrapper">
+            <input type="file" id="file" name="dosya"/>
+            <label for="file" class="btn-1">Dosya Yükle</label>
+            <br>
+            <input type="submit" value="Gönder">
+        </div>
+    </form>
+
+    {% if dosya %}
+        <br>
+        <img width="250px" src="{{ url_for('static', filename='yuklemeler/'+ dosya) }}"/>
+    {% endif %}
+
+{% endblock content %}

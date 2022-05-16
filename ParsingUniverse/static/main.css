@@ -1,0 +1,326 @@
+[type="file"] {
+    height: 0;
+    overflow: hidden;
+    width: 0;
+}
+
+[type="file"] + label {
+    background: #f15d22;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Rubik', sans-serif;
+    font-size: inherit;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    outline: none;
+    padding: 1rem 50px;
+    position: relative;
+    transition: all 0.3s;
+    vertical-align: middle;
+}
+
+[type="file"] + label:hover {
+    background-color: #d3460d;
+}
+
+[type="file"] + label.btn-2 {
+    background-color: #ab1b35;
+    border-radius: 50px;
+    overflow: auto;
+}
+
+[type="file"] + label.btn-2::before {
+    color: #fff;
+    content: "\f382";
+    font-family: "Font Awesome 5 Pro";
+    font-size: 100%;
+    height: 100%;
+    right: 130%;
+    line-height: 3.3;
+    position: absolute;
+    top: 0px;
+    transition: all 0.3s;
+}
+
+[type="file"] + label.btn-2:hover {
+    background-color: #c2063b;
+}
+
+[type="file"] + label.btn-2:hover::before {
+    right: 75%;
+}
+
+body {
+    font-family: 'Literata', serif;
+    font-size: 18px;
+    line-height: 1.3;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.wrapper {
+    background-color: #666666;
+    border-radius: 1rem;
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 2rem;
+    width: 100%;
+}
+
+.footer {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+    margin-top: 3rem;
+}
+
+h1, p {
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.7rem;
+}
+
+a {
+    color: #31c1ef;
+    text-decoration: none;
+}
+
+
+body {
+    color: #222222;
+    font-size: 1em;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.content-footer,
+.masthead-heading,
+.masthead-intro {
+    text-align: center;
+}
+
+.masthead {
+    padding: 2em 0;
+    background-image: url('https://makcreates.com/wp-content/uploads/2018/03/black-background-mak-creates-web-design-services-1500-2500.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: solid 1em #FFCF33;
+}
+
+.masthead-intro {
+    margin-bottom: 0.1em;
+    font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 2em;
+    color: #F0FFFF;
+
+}
+
+.masthead-heading {
+    /* Layout Declarations */
+    color: #F1C863;
+    margin-top: -0.2em;
+    /* Typography Declarations */
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    font-size: 6em;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.introduction-section {
+    max-width: 38em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+
+.introduction-section > p,
+.content-footer > p {
+    font-weight: 350;
+    letter-spacing: 0.05em;
+}
+
+
+section > h1 {
+    margin-top: 2em;
+}
+
+.content-footer,
+.masthead-heading,
+.masthead-intro {
+    text-align: center;
+}
+
+.masthead {
+    padding: 6em 0;
+    background-image: url('https://makcreates.com/wp-content/uploads/2018/03/black-background-mak-creates-web-design-services-1500-2500.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: solid 1em #FFCF33;
+}
+
+.masthead-intro {
+    margin-bottom: 0.6em;
+    font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 2em;
+}
+
+.masthead-heading {
+    margin-top: -0.2em;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    font-size: 6em;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.introduction > p,
+.content-footer > p {
+    font-weight: 300;
+    letter-spacing: 0.02em;
+}
+
+h2 {
+    /* Typography Declarations */
+    font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.introduction-section {
+    max-width: 38em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+
+.content-footer {
+    margin: 50px 0;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #808080;;
+    text-decoration: none;
+}
+
+.social > li {
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.content-footer > p {
+    color: #F0FFFF;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #F1C863;
+}
+
+@media only screen and (max-width: 500px) {
+    .masthead {
+        padding: 3em 0;
+    }
+
+    .masthead-heading {
+        font-size: 3em;
+    }
+
+    .content-footer {
+        padding: 2em 2.5em;
+    }
+}
+
+body {
+    background: #fafafa;
+    color: #333333;
+    margin-top: 5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #444444;
+}
+
+.bg-steel {
+    background-color: #525252;
+
+}
+
+.site-header .navbar-nav .nav-link {
+    color: #e3e3e3;
+
+
+}
+
+.site-header .navbar-nav .nav-link:hover {
+    color: #ffffff;
+
+}
+
+.site-header .navbar-nav .nav-link.active {
+    font-weight: 500;
+
+}
+
+.content-section {
+    background: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-bottom: 20px;
+
+
+}
+
+.article-title {
+    color: #444444;
+}
+
+a.article-title:hover {
+    color: #428bca;
+    text-decoration: none;
+}
+
+.article-content {
+    white-space: pre-line;
+}
+
+.article-img {
+    height: 65px;
+    width: 65px;
+    margin-right: 16px;
+}
+
+.article-metadata {
+    padding-bottom: 1px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #e3e3e3
+}
+
+.article-metadata a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+.article-svg {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+.account-img {
+    height: 125px;
+    width: 125px;
+    margin-right: 20px;
+    margin-bottom: 16px;
+}
+
+.account-heading {
+    font-size: 2.5rem;
+}
+
+
